@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(ee205_lab10d_animal_farm_2
+project(ee205_animal_farm
         VERSION 2.0
         DESCRIPTION "All animals are equal"
         LANGUAGES CXX )
@@ -9,7 +9,7 @@ message( STATUS "CMAKE_SOURCE_DIR = [${CMAKE_SOURCE_DIR}]" )
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(CMAKE_VERBOSE_MAKEFILE off)
+set(CMAKE_VERBOSE_MAKEFILE on)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra")
 
@@ -87,4 +87,4 @@ endif (DOXYGEN_FOUND)
 
 message(STATUS "PROJECT_BINARY_DIR = [${PROJECT_BINARY_DIR}]")
 
-add_executable(ee205_lab10d_animal_farm_2 src/main.cpp src/config.h src/catDatabase.cpp src/catDatabase.h src/addCats.cpp src/addCats.h src/deleteCats.cpp src/deleteCats.h src/reportCats.cpp src/reportCats.h src/Cat.cpp src/Cat.h)
+add_executable(ee205_animal_farm src/main.cpp src/config.h src/catDatabase.cpp src/catDatabase.h src/addCats.cpp src/addCats.h src/deleteCats.cpp src/deleteCats.h src/reportCats.cpp src/reportCats.h src/Cat.cpp src/Cat.h)
